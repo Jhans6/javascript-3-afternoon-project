@@ -21,7 +21,9 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
+const { color, make, model, year, } = carDetails;
+
+console.log(color, make, model, year );
 
 
 
@@ -33,8 +35,9 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
-  //Code Here
+function greeting(obj) {
+ const { firstName, lastName, title} = obj;
+
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -53,7 +56,12 @@ function greeting( obj ) {
   Sum up the values and return the total number.
 */
 
-//Code Here
+function totalPopulation(obj) {
+const {utah, california, texas, arizona} = obj;
+let sum = utah +california +texas +arizona ;
+return sum
+
+}
 
 
 
@@ -67,9 +75,12 @@ function greeting( obj ) {
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
-
-
+function ingredients(obj){
+const { carb, fat, protein } = obj;
+var array = []
+array.push ( carb, fat, protein );
+return array 
+}
 
 ////////// PROBLEM 5 //////////
 
